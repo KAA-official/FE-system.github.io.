@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <title>FE Intensive</title>
+        <meta name="description" content="description" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <!-- Комментарии -->
+    <body>
+        <div class="app" id="app">
+            <header class="app__header header">
+                <div class="header__container container">
+                    <a href="#app" class="header__logo"> 
+                        <svg class="header__logo-img" width="192" height="32" viewBox="0 0 190 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M62.7 22.7C66.5 25.7 69.7 26.2 72.5 26.2C77 26.2 81.5 24.2 81.5 19.5C81.5 14.5 77 13.7 75.7 13.5C74.9 13.3 72.2 13 71.4 12.7C70.6 12.7 69.9 12.5 69.9 11.4C69.9 11.4 69.9 10.1 72.2 10.1C73.2 10.1 75.7 10.6 77.2 11.8L80.5 8.6C78.1 6.7 75.1 5.6 72 5.6C67.7 5.6 64 7.8 64 12.3C64 17.1 68.5 17.8 70.8 18.1C73.6 18.6 73.8 18.6 74.3 18.8C74.8 19 75.3 19.3 75.3 20C75.3 20.2 75 20.8 74.3 21.3C73.8 21.5 73 21.5 72.5 21.5C70 21.5 67.7 20.2 66.2 19.2L62.7 22.7ZM103.4 6.3H97.1L93.1 18.5L89.1 6.3H82.6L89.1 24.3C89.4 25.1 89.4 25.3 89.4 25.6C89.4 26.6 88.4 26.6 87.4 26.6H85.1V32H89.4C90.9 32 93.2 32 94.7 30C95.2 29 95.7 28 96.2 26.5L103.4 6.3ZM103.9 22.7C107.7 25.7 110.9 26.2 113.7 26.2C118 26.2 122.7 24.2 122.7 19.5C122.7 14.5 118.2 13.7 116.9 13.5C116.1 13.3 113.1 13 112.6 12.7C111.8 12.7 111.1 12.5 111.1 11.4C111.1 11.4 111.1 10.1 113.1 10.1C114.4 10.1 116.9 10.6 118.4 11.8L121.4 8.6C119.1 6.6 116.1 5.6 112.9 5.6C108.9 5.6 104.9 7.8 104.9 12.3C104.9 17.1 109.4 17.8 111.9 18.1C114.4 18.6 114.9 18.6 115.4 18.8C115.7 19 116.2 19.3 116.2 20C116.2 20.2 116.2 20.8 115.4 21.3C114.9 21.5 114.1 21.5 113.6 21.5C110.8 21.5 108.6 20.2 107.1 19.2L103.9 22.7ZM132.5 10.3H135.5V6.8H132.5V0H126.2V6.8H123.7V10.3H126.2V20.5C126.2 23.8 126.2 26.3 132 26.3C133.5 26.3 134.5 26.1 135.5 26.1V21.4C135.2 21.4 135 21.6 134.5 21.6C132.7 21.6 132.5 20.3 132.5 19.3V10.3ZM157.4 17.3C157.4 15.8 157.4 13.6 156.6 11.5C155.1 8.3 151.6 5.8 147.3 5.8C142 5.8 137.5 9.3 137.5 15.8C137.5 21.3 141 26.3 147.8 26.3C152.1 26.3 155.1 24.3 156.6 22.1C156.9 21.9 157.1 21.3 157.4 21.1L152.6 18.1C152.3 18.8 151.1 21.3 147.8 21.3C146 21.3 144.8 20.5 144.3 19.6C143.8 18.8 143.8 18.1 143.8 17.3H157.4ZM143.8 13.5C144.1 10.3 146.6 10 147.3 10C149.1 10 151.1 10.8 151.1 13.5H143.8ZM166.2 6.3H160.2V25.8H166.7V15C166.7 14 166.7 12.7 167.5 12C168 11.5 168.5 11.5 169.3 11.5C170.3 11.5 170.8 11.7 171.1 12C171.9 12.7 172.1 13.5 172.1 15V25.7H178.4V15C178.4 13.7 178.4 12.7 179.2 12C179.7 11.5 180.5 11.3 181.2 11.3C181.5 11.3 183 11.3 183.5 12.8C183.7 13.3 183.7 13.8 183.7 14.8V25.8H190.2V13.8C189.9 10.6 189.9 8 187.2 6.6C186.2 6.1 184.9 5.9 183.2 5.9C179.4 5.9 178.2 7.9 177.7 8.9C176.9 7.6 176.2 5.9 172.2 5.9C170.4 5.9 168.7 6.4 167.7 7.4C166.9 7.9 166.7 8.4 166.4 8.9V6.3H166.2ZM0 1.7H10.8V13.2H0V1.7ZM14.8 1.7H25.6V13.2H14.8V1.7ZM29.9 1.7H40.7V13.2H29.9V1.7ZM44.9 1.7H55.7V13.2H44.9V1.7ZM0 18.5H10.8V30H0V18.5ZM14.8 18.5H25.6V30H14.8V18.5ZM29.9 18.5H40.7V30H29.9V18.5ZM44.9 18.5H55.7V30H44.9V18.5Z" fill="#0096A7"/>
+                        </svg>        
+                    </a>
+
+                    <nav class="header__menu"> 
+                        <ul class="header__menu-list"> 
+                            <li class="header__menu-link">
+                                <a href="#app" class="header__menu-link">Домой</a>
+                            </li>
+                            <li class="header__menu-link">
+                                <a href="#features" class="header__menu-link">Особенности</a>
+                            </li>
+                            <li class="header__menu-link">
+                                <a href="#benefits" class="header__menu-link">Преимущества</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <main class="app__main">
+                <section class="hero" id="hero">
+                    <div class="hero__container container">
+                         <div class="hero__content">
+                            <figure class="hero__figure"> 
+                                <img src="https://ic.wampi.ru/2023/02/04/hero_1.jpg" alt="Разработано 2000+ приложений" class="hero__image"/>
+                            </figure>
+
+                            <div class="hero__text">
+                                <h1 class="hero__title">
+                                    Разработано 2000+ приложений
+                                </h1>
+
+                                <div class="hero__subtitle">
+                                    Для вашего удобства мы разработали множество приложений для вашего бизнеса и команды, которые доступны 
+                                    в любое время суток
+                                </div>
+
+                                <button class="hero__button">
+                                    Присоединяйтесь
+                                </button>
+                            </div>
+                         </div>
+
+                         <div class="hero__dots">
+                            <span class="hero__dot active"></span>
+                            <span class="hero__dot"></span>
+                            <span class="hero__dot"></span>
+                         </div>
+                    </div>
+                </section>
+
+                <section class="features" id="features">
+                    <div class="features__container container">
+                        <div class="features__list">
+                            <div class="features__item"> 
+                                <img src="https://im.wampi.ru/2023/02/04/check.jpg" alt="check" width="44" height="44" class="features__item-icon">
+
+                                <div class="features__item-content">
+                                    <h3 class="features__item-title">
+                                        Для бизнеса
+                                    </h3>
+
+                                    <p class="features__item-caption">
+                                        Создаем кастомизированные программы и сервисы
+                                        для развития управленческих команд в российских и
+                                        международных компаниях
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="features__item">
+                                <img src="https://im.wampi.ru/2023/02/04/check.jpg" alt="check" width="44" height="44" class="features__item-icon">
+
+                                <div class="features__item-content">
+                                    <h3 class="features__item-title">
+                                        Для колл-центров
+                                    </h3>
+
+                                    <p class="features__item-caption">
+                                        Помогаем руководителям и командам колл-центров создать полный цикл по поддержке клиентов и
+                                        организовать контроль качества
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="features__item">
+                                <img src="https://im.wampi.ru/2023/02/04/check.jpg" alt="check" width="44" height="44" class="features__item-icon">
+
+                                <div class="features__item-content">
+                                    <h3 class="features__item-title">
+                                        Облачные хранилища
+                                    </h3>
+
+                                    <p class="features__item-caption">
+                                        Разрабатываем локальные защищенные
+                                        корпоративные хранилища, а также осуществляем
+                                        поддержку на протяжении всего времени
+                                        пользования
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> 
+
+                <!-- <section class="features1" id="features1">
+                    <div class="features1__container container">
+                        <div class="features1__list">
+                            <div class="features1__dots">
+                                <span class="features1__dot active">Для бизнеса</span>
+                                <span class="features1__dot">Для колл-центров</span>
+                                <span class="features1__dot">Облачные хранилища</span>
+                            </div>
+                        
+                            <div class="features1__item">
+                                Создаем кастомизированные программы и сервисы
+                                для развития управленческих команд в российских и
+                                международных компаниях
+                            </div>
+                        </div>
+                    </div>
+                </section> -->
+
+                <section class="features2" id="features2">
+                    <div class="features2__container container">
+                        <div class="features2__nav">
+                            <div class="features2__nav-item active">
+                                Для бизнеса
+                            </div>
+
+                            <div class="features2__nav-item">
+                                Для колл-центров
+                            </div>
+
+                            <div class="features2__nav-item">
+                                Облачные хранилища
+                            </div>
+                        </div>
+
+                        <div class="features2__list">
+                            <div class="features2__item active">
+                                <p class="features2__item-caption">
+                                    Создаем кастомизированные программы и сервисы
+                                    для развития управленческих команд в российских и
+                                    международных компаниях  
+                                </p>
+                            </div>
+
+                            <div class="features2__item">
+                                <p class="features2__item-caption">
+                                    Помогаем руководителям и командам колл-центров 
+                                    создать полный цикл по поддержке клиентов и 
+                                    организовать контроль качества
+                                </p>
+                            </div>
+
+                            <div class="features2__item">
+                                <p class="features2__item-caption">
+                                    Разрабатываем локальные защищенные корпоративные 
+                                    хранилища, а также осуществляем поддержку на протяжении 
+                                    всего времени пользования
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="benefits" id="benefits">
+                    <div class="benefits__container container">
+                        <h2 class="benefits__title">
+                            Преимущества
+                        </h2>
+                    
+                        <div class="benefits__list">
+                            <div class="benefits__item">
+                                <figure class="benefits__figure"> 
+                                    <img src="https://ic.wampi.ru/2023/02/04/second_1.jpg" alt="Поддержка 24/7" class="benefits__image"/>
+                                    <!-- <img src="assets/second_1.jpg" alt="Поддержка 24/7" class="benefits__image"> -->
+                                </figure>
+
+                                <div class="benefits__item-content">
+                                    <h3 class="benefits__item-title">
+                                        Поддержка 24/7
+                                    </h3>
+
+                                    <p class="benefits__item-caption">
+                                        Вы можете положиться на нашу круглосуточную
+                                        поддержку, которая решит любой вопрос в течении часа
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="benefits__item">
+                                <figure class="benefits__figure">
+                                    <img src="https://im.wampi.ru/2023/02/04/second_2.jpg" alt="Гарантия возврата" class="benefits__image">
+                                </figure>
+
+                                <div class="benefits__item-content">
+                                    <h3 class="benefits__item-title">
+                                        Гарантия возврата
+                                    </h3>
+
+                                    <p class="benefits__item-caption">
+                                        Если вам не понравится сервис, мы вернем вам
+                                        полную стоимость в течении 30-дневного периода
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="benefits__item">
+                                <figure class="benefits__figure"> 
+                                    <img src="https://ie.wampi.ru/2023/02/04/second_3.jpg" alt="Гарантия возврата" class="benefits__image">
+                                </figure>
+
+                                <div class="benefits__item-content">
+                                    <h3 class="benefits__item-title">
+                                        Удобство и простота
+                                    </h3>
+
+                                    <p class="benefits__item-caption">
+                                        Все наши сервисы и приложения интуитивно понятны
+                                        для пользователей всех уровней
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <div class="footer__container container">
+                    <div class="footer__copyright">
+                        2000-2022 © System
+                    </div>
+
+                    <div class="footer__social">
+                        <a href="#Facebook" target="_blank" rel="noopener noreferrer" title="Facebook" class="footer__social-link">
+                            <svg class="footer__social-icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.5006 37L22.4665 26.5H18V22H22.4665V19C22.4665 14.9512 24.955 13 28.5399 13C30.2571 13 31.7329 13.1288 32.163 13.1864V17.4176L29.6767 17.4187C27.7271 17.4187 27.3496 18.3521 27.3496 19.7219V22H32.8882L31.3994 26.5H27.3496V37H22.5006Z" fill="black" fill-opacity="0.87"/>
+                            </svg>
+                        </a>
+
+                        <a href="#Twitter" target="_blank" rel="noopener noreferrer" title="Twitter" class="footer__social-link">
+                            <svg class="footer__social-icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M37 17.2669C36.1 17.7203 35.2 17.8714 34.15 18.0225C35.2 17.418 35.95 16.5113 36.25 15.3023C35.35 15.9068 34.3 16.209 33.1 16.5113C32.2 15.6045 30.85 15 29.5 15C26.95 15 24.7 17.2669 24.7 19.9872C24.7 20.4406 24.7 20.7428 24.85 21.0451C20.8 20.8939 17.05 18.9293 14.65 15.9068C14.2 16.6624 14.05 17.418 14.05 18.4759C14.05 20.1383 14.95 21.6496 16.3 22.5563C15.55 22.5563 14.8 22.2541 14.05 21.9518C14.05 24.3699 15.7 26.3345 17.95 26.7879C17.5 26.939 17.05 26.939 16.6 26.939C16.3 26.939 16 26.939 15.7 26.7879C16.3 28.7525 18.1 30.2638 20.35 30.2638C18.7 31.6239 16.6 32.3796 14.2 32.3796C13.75 32.3796 13.45 32.3796 13 32.3796C15.25 33.7397 17.8 34.6465 20.5 34.6465C29.5 34.6465 34.45 27.0901 34.45 20.5917C34.45 20.4406 34.45 20.1383 34.45 19.9872C35.5 19.2315 36.4 18.3248 37 17.2669Z" fill="black" fill-opacity="0.87"/>
+                            </svg>
+                        </a>
+
+                        <a href="#Instagram" target="_blank" rel="noopener noreferrer" title="Instagram" class="footer__social-link">
+                            <svg class="footer__social-icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M31.2175 20.2779C32.0128 20.2779 32.6575 19.6332 32.6575 18.8379C32.6575 18.0427 32.0128 17.3979 31.2175 17.3979C30.4222 17.3979 29.7775 18.0427 29.7775 18.8379C29.7775 19.6332 30.4222 20.2779 31.2175 20.2779Z" fill="black" fill-opacity="0.87"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M19 25C19 28.309 21.691 31 25 31C28.309 31 31 28.309 31 25C31 21.691 28.309 19 25 19C21.691 19 19 21.691 19 25ZM22 25C22 23.3455 23.3455 22 25 22C26.6545 22 28 23.3455 28 25C28 26.6545 26.6545 28 25 28C23.3455 28 22 26.6545 22 25Z" fill="black" fill-opacity="0.87"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M19 37H31C34.084 37 37 34.084 37 31V19C37 15.916 34.084 13 31 13H19C15.916 13 13 15.916 13 19V31C13 34.084 15.916 37 19 37ZM16 19C16 17.5975 17.5975 16 19 16H31C32.4025 16 34 17.5975 34 19V31C34 32.4025 32.4025 34 31 34H19C17.5705 34 16 32.4295 16 31V19Z" fill="black" fill-opacity="0.87"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>

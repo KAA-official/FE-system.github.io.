@@ -76,6 +76,7 @@ section {
 
 .header__logo {
     flex-shrink: 0;
+    cursor: default;
 }
 
 .header__menu-list {
@@ -99,7 +100,7 @@ section {
 @media (max-width: 1024px) {
     .header {
         flex-shrink: 0; 
-        margin-top: auto;           /*!!!!!!!!!!!*/
+        margin-top: auto;           
         padding: 32px 0;
     }
 }
@@ -107,7 +108,7 @@ section {
 @media (max-width: 768px) {
     .header {
         flex-shrink: 0; 
-        margin-top: auto;           /*!!!!!!!!!!!*/
+        margin-top: auto;           
         padding: 16px 0;
     }
 
@@ -115,6 +116,7 @@ section {
         display: none;
     }
 }
+
 
 
 
@@ -223,7 +225,7 @@ section {
 
 @media (max-width: 1024px) {
     .hero {
-        padding: 64px 0 32px;
+        padding: 0 0 0;
     }
 
     .hero__content {
@@ -292,7 +294,7 @@ section {
 }
 
 .features__item-title {
-    margin-bottom: 14px;
+    margin-bottom: 14px; /*нижний отступ*/
     font-weight: 700;
     font-size: 24px;
     line-height: 44px;
@@ -312,7 +314,7 @@ section {
 
 @media (max-width: 768px) {
     .features {
-        padding: 64px 0 32px;
+        padding: 42px 0 0;
     }
 
     .features__list {
@@ -334,13 +336,140 @@ section {
 }
 
 
+/*______FEATURES1______*/
+
+/*.features1__list {
+    -moz-transition: all 300ms; /*необходимо для браузера мазила*/
+ /*   -webkit-transition: all 300ms; /*необходимо для Safari-браузера*/
+ /*   transition: all 300ms;
+}*/
+
+.features1__dot {
+    margin-bottom: 14px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 44px;
+    color: rgba(66, 74, 87, 0.5);
+
+    margin-right: 32px;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    transition: color .15s;
+}
+
+.features1__dot:hover, .features1__dot.active {
+    color: #0096A7;
+}
+
+.features1__item {
+    margin-top: 32px; /*верхний отступ*/
+    width: 780px;
+    height: 56px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+
+
+/*______FEATURES2______*/
+
+.features2__nav {
+    display: flex;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.features2__nav-item {
+    margin-bottom: -1px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 44px;
+    color: rgba(66, 74, 87, 0.5);
+    border-bottom: 1px solid transparent;
+    transition: border .15s, color .15s;
+    cursor: pointer;
+}
+
+.features2__nav-item + .features2__nav-item {
+    margin-left: 32px;
+}
+
+.features2__nav-item:hover {
+    color: #0096A7;
+}
+
+.features2__nav-item.active {
+    color: #0096A7;
+    border-color: #0096A7;
+}
+
+@keyframes fadeFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+}
+
+.features2__item {
+    max-width: 768px;
+    display: none;
+    animation: fadeFromTop .15s ease-in;
+}
+
+.features2__item.active {
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    .features2__nav {
+        margin-bottom: 24px;
+    }
+
+    .features2__nav-item {
+        font-size: 20px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .features2 {
+        padding: 42px 0 0;
+        height: auto;
+    }
+    
+    .features2__nav {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .features2__nav-item {
+        margin-top: 10px;
+        font-size: 30px;
+        line-height: 42px;
+    }
+
+    .features2__nav-item + .features2__nav-item {
+        margin-left: 0px;
+    }
+}
+
+
+
 
 
 /*______BENEFITS______*/
 /*====================*/
 
 .benefits {
-    padding: 50px 0 32px;
+    padding: 0 0 32px;
     background: rgba(255, 255, 255, 0.9);
 }
 
@@ -421,7 +550,7 @@ section {
 
 @media (max-width: 768px) {
     .benefits {
-        padding: 64px 0 32px;
+        padding: 42px 0 0;
         margin-bottom: 0;
     }
 
@@ -441,6 +570,8 @@ section {
 
     .benefits__item-content {
         margin-left: -15px;
+        margin-top: 15px;
+        margin-bottom: 64px;
     }
 
     .benefits__title {
@@ -463,7 +594,6 @@ section {
         margin-left: 17px;
     }
 }
-
 
 
 
@@ -521,7 +651,7 @@ section {
 @media (max-width: 1024px) {
     .footer {
         flex-shrink: 0; 
-        margin-top: auto;           /*!!!!!!!!!!!*/
+        margin-top: auto;           
         padding: 32px 0;
     }
 
@@ -534,7 +664,7 @@ section {
 @media (max-width: 768px) {
     .footer {
         flex-shrink: 0; 
-        margin-top: auto;           /*!!!!!!!!!!!*/
+        margin-top: auto;           
         padding: 16px 0;
     }
 
